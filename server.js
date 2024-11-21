@@ -14,12 +14,12 @@ app.use(express.json());
   //{ id: 3, descricao: "Gato fazendo panqueca", imagem: "https://placecats.com/millie/300/150"},
 //];
 
-function BuscarPostPorID(id){
-  return posts.findIndex((post)=>{
-    return post.id === Number(id);
+// function BuscarPostPorID(id){
+//   return posts.findIndex((post)=>{
+//     return post.id === Number(id);
 
-  })
-}
+//   })
+// }
 
 app.get("/posts",async (req, res) => {
   const posts=  await getTodosPosts()
